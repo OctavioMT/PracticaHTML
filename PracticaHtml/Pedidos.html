@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos LaunchX</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color:#CEE7E8;
+            padding: 3px;
+            text-align: justify;
+            font-size: 35px;
+            color: #06858a;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 15%;
+            height: 1000px;
+            /* only for demonstration, should be removed */
+            background: rgb(230, 228, 228);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            text-align: center;
+            padding: 20px;
+            width: 85%;
+            background-color: #f1f1f1;
+            height: 1000px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #CEE7E8;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+     
+
+        p{
+            color: black;
+        }
+
+        .formulario{
+            margin: auto;
+            border: rgb(77, 76, 76) 2px solid;
+            width: 300px;
+            text-align:initial;
+        }
+      
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div>
+        
+        <h2 > <img src="./assets/Img/Pasteleria.png" alt="Los mejores pasteles del rumbo" width="20%" id="LogoPasteleria"  /> Pastelería LaunchX  </h2>
+        </div>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="ClientesPasteles.html">Pasteles</a></li>
+                <li><a href="Pedidos.html">Pedidos</a></li>
+            </ul>
+        </nav>
+        
+
+        <article>
+            <h2>Pedidos</h2>
+            <h1>Datos del cliente</h1>
+            <label for="Nombre">Nombre</label><br>
+            <input type="text" id="Nombre" name="Nombre" maxlength="60"><br><br>
+            <label for="tel1">Teléfono</label><br>
+            <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+            <label for="correo1">email</label><br>
+            <input type="email" id="correo1" name="correo1"><br><br>
+            <h1>¿Como quieres tu pastel?</h1>
+            
+            <h1>¿Sabor?</h1>
+            <div class="formulario">
+                <br>
+            <input type="radio" id="chocolate" name="sabor" value="Chocolate">
+            <label for="chocolate">Chocolate</label><br>
+            <input type="radio" id="vainilla" name="sabor" value="Vainilla">
+            <label for="vainilla">Vainilla</label><br>
+            <input type="radio" id="3leches" name="sabor" value="3 Leches">
+            <label for="3leches">3 Leches</label><br>
+            <input type="radio" id="rellenofresa" name="sabor" value="Relleno Fresa">
+            <label for="rellenofresa">Relleno Fresa</label><br>
+            <input type="radio" id="rellenodurazno" name="sabor" value="Relleno Durazno">
+            <label for="rellenodurazno">Relleno Durazno</label><br>
+            <input type="radio" id="imposible" name="sabor" value="Imposible">
+            <label for="imposible">Imposible</label><br><br>
+            </div>
+            <h1>¿Adorno?</h1>
+            <div class="formulario">
+                <br>
+            <input type="radio" id="cchocolate" name="adorno" value="Cubierta de chocolate">
+            <label for="cchocolate">Cubierta de chocolate</label><br>
+            <input type="radio" id="frutaseca" name="adorno" value="Con fruta seca">
+            <label for="frutaseca">Con fruta seca</label><br>
+            <input type="radio" id="marmoleado" name="adorno" value="Marmoleado">
+            <label for="marmoleado">Marmoleado</label><br>
+            <input type="radio" id="cubiertafrutas" name="adorno" value="Cubierta de frutas">
+            <label for="cubiertafrutas">Cubierta de frutas</label><br>
+            <input type="radio" id="fondant" name="adorno" value="Decorado de fondant">
+            <label for="fondant">Decorado de fondant</label><br><br>
+             </div>
+             <br>
+             <label for="cantidad">¿Cuantos?</label><br>
+            <input type="number" id="cantidad" name="cantidad" maxlength="60"><br><br>
+            <label for="indicacion">¿Tiene alguna indicación especial?</label><br>
+            <input type="text" id="indicacion" name="indicacion" maxlength="60"><br><br>
+
+            <input type="button" id="pedido" name="pedido" value="Levantar Pedido" onclick="alert('Su pedido fue procesado correctamente');"><br><br>
+          
+            
+        </article>
+    </section>
+
+    <footer>
+        <p><ul>
+            <li><p>Contacto:</p></li>
+            <li><p>Telefono: 56-58-11-11</p></li>
+            <li><p>Un gusto saber de tí</p></li>
+            <li><p>Dirección:</p></li>
+                <li><p>Avenida Siempre viva 742, SprintField</p></li>
+            <li><p>Horarios de atención:</p></li>
+            <li><p>Lunes-domingo de 7:00 am a 11:pm</p></li>
+        </ul></p>
+      
+    </footer>
+
+</body>
+
+</html>

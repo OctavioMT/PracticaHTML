@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería LaunchX</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color:#CEE7E8;
+            padding: 3px;
+            text-align: justify;
+            font-size: 35px;
+            color: #06858a;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 600px;
+            /* only for demonstration, should be removed */
+            background: rgb(230, 228, 228);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            text-align: center;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 600px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #CEE7E8;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+     
+
+        p{
+            color: black;
+        }
+      
+        .formulario{
+            margin: auto;
+            border: rgb(77, 76, 76) 2px solid;
+ 
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div>
+        
+        <h2 > <img src="./assets/Img/Pasteleria.png" alt="Los mejores pasteles del rumbo" width="20%" id="LogoPasteleria"  /> Pastelería LaunchX  </h2>
+        </div>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a >Insumos Sabores</a></li>
+                <table class="default">
+                    <colgroup>
+                        <col style="background-color: rgb(175, 216, 255)" span="1">
+                        <col style="background-color: rgb(0, 132, 255)" span="1">  
+                    </colgroup>
+                    <tr>
+                        <th></th>
+                        <th>Cantidad de pasteles</th>
+                    </tr>
+                    <tr>
+                        <th>Chocolate</th>
+                        <th>3</th>
+                    </tr>
+                    <tr>
+                        <th>Vainilla</th>
+                        <th>4</th>
+                    </tr>
+                    <tr>
+                        <th>3 Leches</th>
+                        <th>10</th>
+                    </tr>
+                    <tr>
+                        <th>Relleno Fresa</th>
+                        <th>12</th>
+                    </tr>
+                    <tr>
+                        <th>Relleno Durazno</th>
+                        <th>2</th>
+                    </tr>
+                    <tr>
+                        <th>Imposible</th>
+                        <th>7</th>
+                    </tr>
+                </table>
+
+                <li><a>Insumos Adornos</a></li>
+                <table class="default">
+                    <colgroup>
+                        <col style="background-color: rgb(175, 216, 255)" span="1">
+                        <col style="background-color: rgb(0, 132, 255)" span="1">  
+                    </colgroup>
+                    <tr>
+                        <th></th>
+                        <th>Cantidad de Adornos</th>
+                    </tr>
+                    <tr>
+                        <th>Cubierta de chocolate</th>
+                        <th>7</th>
+                    </tr>
+                    <tr>
+                        <th>fruta seca</th>
+                        <th>8</th>
+                    </tr>
+                    <tr>
+                        <th>Marmoleado</th>
+                        <th>4</th>
+                    </tr>
+                    <tr>
+                        <th>Cubierta de frutas</th>
+                        <th>9</th>
+                    </tr>
+                    <tr>
+                        <th>Decorado de fondant</th>
+                        <th>15</th>
+                    </tr>
+                  
+                </table>
+            </ul>
+        </nav>
+        
+
+        <article>
+            <h1>Pedidos Clientes</h1>
+            <table class="default">
+                <colgroup>
+                    <col style="background-color: rgb(0, 132, 255)" span="1">
+                    <col style="background-color: rgb(175, 216, 255)" span="1">
+                    <col style="background-color: rgb(0, 132, 255)" span="1">
+                    <col style="background-color: rgb(175, 216, 255)" span="1">
+                    <col style="background-color: rgb(0, 132, 255)" span="1">
+                    <col style="background-color: rgb(175, 216, 255)" span="1">
+                    <col style="background-color: rgb(0, 132, 255)" span="1">
+                  </colgroup>
+                <tr>
+                  <th># Pedido</th>
+                  <th>Nombre cliente</th>
+                  <th>Telefono</th>
+                  <th>Email</th>
+                  <th>Sabor</th>
+                  <th>Adorno</th>
+                  <th>Piezas</th>
+              
+                </tr>
+              
+                <tr>
+              
+                  <td>1</td>
+              
+                  <td>Octavio M</td>
+              
+                  <td>5555555555</td>
+
+                  <td>octavio@mail.mx</td>
+
+                  <td>Chocolate</td>
+
+                  <td>Cubierta de chocolate</td>
+
+                  <td>2</td>
+              
+                </tr>
+              
+                <tr>
+              
+                    <td>2</td>
+              
+                    <td>Octavio M</td>
+                
+                    <td>5555555555</td>
+  
+                    <td>octavio@mail.mx</td>
+  
+                    <td>Chocolate</td>
+  
+                    <td>Cubierta de chocolate</td>
+  
+                    <td>15</td>
+              
+                </tr>
+              
+                <tr>
+              
+                    <td>3</td>
+              
+                    <td>Octavio M</td>
+                
+                    <td>5555555555</td>
+  
+                    <td>octavio@mail.mx</td>
+  
+                    <td>Chocolate</td>
+  
+                    <td>Cubierta de chocolate</td>
+  
+                    <td>1</td>
+                </tr>
+              
+              </table>
+        </article>
+    </section>
+
+   
+
+</body>
+
+</html>

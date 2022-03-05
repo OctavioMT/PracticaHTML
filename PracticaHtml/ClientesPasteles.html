@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería LaunchX</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color:#CEE7E8;
+            padding: 3px;
+            text-align: justify;
+            font-size: 35px;
+            color: #06858a;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 15%;
+            height: 600px;
+            /* only for demonstration, should be removed */
+            background: rgb(230, 228, 228);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            text-align: center;
+            padding: 20px;
+            width: 85%;
+            background-color: #f1f1f1;
+            height: 600px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #CEE7E8;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+     
+
+        p{
+            color: black;
+        }
+      
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div>
+        
+        <h2 > <img src="./assets/Img/Pasteleria.png" alt="Los mejores pasteles del rumbo" width="20%" id="LogoPasteleria"  /> Pastelería LaunchX  </h2>
+        </div>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="ClientesPasteles.html">Pasteles</a></li>
+                <li><a href="Pedidos.html">Pedidos</a></li>
+            </ul>
+        </nav>
+        
+
+        <article>
+            <h1>Sabores de pasteles</h1>
+            <p>Chocolate ................................ $ 380</p>
+            <p>Vainilla ..................................... $ 380</p>
+            <p>3 Leches ................................. $ 380</p>
+            <p>Relleno Fresa........................... $ 380</p>
+            <p>Relleno Durazno....................... $ 380</p>
+            <p>Imposible.................................. $ 380</p>
+            <br></br>
+            <h3>Adornos de pasteles</h3>
+            <p>Cubierta de chocolate ............. $ 80</p>
+            <p>Con fruta seca ........................ $ 180</p>
+            <p>Marmoleado............................ $ 110</p>
+            <p>Cubierta de frutas.................. $ 180</p>
+            <p>Decorado de fondant.............. $ 230</p>
+            
+            <p></p>
+            <p></p>
+        </article>
+    </section>
+
+    <footer>
+        <p><ul>
+            <li><p>Contacto:</p></li>
+            <li><p>Telefono: 56-58-11-11</p></li>
+            <li><p>Un gusto saber de tí</p></li>
+            <li><p>Dirección:</p></li>
+                <li><p>Avenida Siempre viva 742, SprintField</p></li>
+            <li><p>Horarios de atención:</p></li>
+            <li><p>Lunes-domingo de 7:00 am a 11:pm</p></li>
+        </ul></p>
+      
+    </footer>
+
+</body>
+
+</html>
